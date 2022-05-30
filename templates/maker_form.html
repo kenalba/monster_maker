@@ -1,0 +1,15 @@
+<!doctype html>
+
+<html>
+<head>
+<title> Monster Maker: Create a Monster </title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<h1>Welcome to the monstermaker.</h1>
+<h3>To start with, pick your monster's name.</h3>
+<form method="POST">
+	<p><input type="text" name="monster_name" id="monster_name" placeholder="Monster name here." size="40" required>
+	<p><input type= "submit"></p>
+</form>
+</body>
