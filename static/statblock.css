@@ -1,0 +1,107 @@
+    *				{margin:0; padding:0; box-sizing:border-box; -moz-box-sizing: border-box}
+    html 			{font-size:62.5%}
+    hr              {border-top:2px solid #922610}
+    .titre1			{font-size:2.4rem; text-align:center; padding:20px 10px 10px 10px; font-weight:bold}
+    .titre2			{font-size:1.4rem; text-align:center; padding: 0px 10px 10px 10px}
+    .warning		{font-size:1.2rem; text-align:center; padding:10px 0 0 0; font-style:italic}
+
+    a 				{color: #B80000; text-decoration: none}
+    a:hover 		{color: #D80000; border-bottom-style: dashed; border-bottom-width: 1px}
+
+    .bloc			{padding:15px 15px 0px 15px; display:inline-block;
+                     font-family: Georgia, "Times New Roman", serif; font-size:1.2rem; line-height:1.4; text-align:left;
+                     break-inside:avoid-column; break-inside:avoid}
+    .nobloc			{width:100%; display:block}
+    .bloc h1		{padding:0; font-variant:small-caps; letter-spacing:1px; color:#6D0000; font-size:2.2rem; line-height:1}
+    .bloc h1 span	{padding:4px; font-variant:none; letter-spacing:0px; background-color:#E0E0E0; color:black; font-family: arial, sans-serif; font-size:1.1rem; font-weight:normal}
+
+    .trad			{padding:2px 0 0   0; font-family: arial, sans-serif; font-size:1.2rem}
+
+    .type			{padding:2px 0 0px 0; text-align:left; font-style:italic}
+    .description	{padding:6px 0 6px 0; text-align:justify}
+    .resume			{font-size:1.1rem; text-align:center; padding: 5px 0 0 0; font-style:italic}
+    div.source		{display:inline-block; margin:8px 4px 0 0; padding:0 3px; background-color:white; font-family: arial, sans-serif; font-size:1.1rem}
+    div.ref			{padding:4px 0 4px 0; font-family: arial, sans-serif; font-size:1.1rem}
+
+    p				{padding:0; margin:5px 0 5px 0}
+    .center			{text-align:center}
+
+    .picture		{text-align:center; margin-bottom:8px; font-family: arial, sans-serif; font-size:1rem; font-style:italic}
+    .picture img	{border:4px solid #888; max-width:100%; width:auto}
+
+    .orange			{border:1px black solid; background-color:#e69a28; width:100%; height:6px}
+    .jaune			{background-color: #fdf1dc; padding:10px 8px 5px 8px; margin:0 2px 0 2px; box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+                     background-image: url("../images/fond-mm-effet.png"), url("../images/fond-ph.jpg");
+                     background-repeat: no-repeat, repeat}
+    div svg			{width:100%; height:5px}
+    .sansSerif		{font-family: arial, sans-serif}
+    .red			{color:#6D0000}
+    .carac			{display:inline-block; padding-left:16px; text-align:center}
+    .rub			{color:#6D0000; margin:10px 0 5px 0; border-bottom:1px solid #B30303; font-size:1.2rem; font-weight: bold; font-variant:small-caps}
+
+    div .variant	{background-color:#DBE2C2; font-family: arial, sans-serif;
+                     border-top:4px solid #404040; border-bottom:4px solid #404040;
+                     padding:5px 10px 0px 10px; margin:10px 0 0 0}
+    div .variant::first-letter {font-size:15px}
+
+    .blocCarte		{display:inline-block; position:relative; width:6.3cm; height:8.8cm; margin:1px 0 0 1px; padding:3px; vertical-align:top; border:4px solid black;
+                     background:white url("../images/fond-dmg.jpg") repeat; overflow:hidden;
+                     font-family: Georgia, "Times New Roman", serif; font-size:1.0rem; line-height:1; text-align:left}
+    .blocCarteP	 	{font-size:0.95rem; color:black}
+    .blocCarteTP	{font-size:0.85rem; color:black}
+    .blocCarte .orange	{border:0px black solid; height:0px}
+    .blocCarte div svg	{height:3px}
+    .blocCarte h1	{font-size:1.2rem; background-color:#e69a28; color:white; padding:4px 4px 3px 4px}
+    .blocCarte a	 {text-decoration:none; color:black; }
+    .blocCarte .trad 	{display:none}
+    .blocCarte .carac	{padding-left:1px}
+    .blocCarte .type		{padding:2px 0 0px 0}
+    .blocCarte .description	{padding:4px 0 0 0}
+    .blocCarte .resume		{display:none}
+    .blocCarte .source	{position:absolute; bottom:-1px; left:0px; background:black; color:white; width:100%; font-size:.9rem; letter-spacing:0px; padding:4px 0 1px 0}
+
+    .cols1			{column-span:all; width:990px; margin-left:auto; margin-right:auto}
+    .cols2			{column-count:2;  width:990px; margin-left:auto; margin-right:auto}
+    .cols1A			{width:990px; margin-left:auto; margin-right:auto}
+    .cols1 .cols2	{width:100%}
+    .content		{display:inline-block; width:490px; border:1px}
+    .ads			{display:inline-block; width:490px; border:1px; padding:70px 0 0 50px; vertical-align:top}
+
+    @media print {
+        html 	{font-size:62.5%}
+        body	{background-image:none}
+        .cols1	{width:100%; page-break-after:always}
+        .cols2	{width:100%}
+        .cols1A	{column-count:1; width:100%}
+        .content	{width:100%}
+        .titre1	{padding-top:0}
+        .bloc	{width:100%; min-width:200px; padding:10px 5px 0 5px; font-size:1.1rem; line-height:1.2}
+        .bloc a:link, .bloc a:visited, .bloc a:hover {color:#000; text-decoration: none}
+        .bloc h1				{font-size:1.2rem}
+        .bloc h1:first-letter 	{font-size:1.7rem}
+
+        .petit			{font-size:1.0rem; line-height:1.1}
+        .trespetit 		{font-size:1.0rem; line-height:1.1}
+        .petit .rub		{font-size:1.0rem}
+        .petit .rub:first-letter{font-size:1.2rem}
+        .trespetit .rub	{font-size:1.0rem}
+        .trespetit .rub:first-letter {font-size:1.2rem}
+        .picture img	{max-width:100%; max-height:250px}
+
+        div.source	{border:1px solid grey}
+        .blocCarte div.source {border-style:none}
+        div.ref		{font-size:0.9rem}
+
+        .ads	{display:none}
+    }
+
+    @media only screen and (max-width:980px) {
+        html 	{font-size:75%}
+        .cols1	{width:50%}
+        .cols2	{column-count:1; width:100%}
+        .cols1A	{width:100%; margin:0}
+        .content	{width:100%}
+            .bloc	{width:100%; min-width:auto; padding:3%; line-height:1.4; margin:0}
+            .carac	{min-width:16.6%; padding:0; margin:0; vertical-align:top}
+        .ads 		{width:100%; padding:0}
+    }

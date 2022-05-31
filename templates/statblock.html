@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html>
+<head>
+<title> {{ monster_name }} </title>
+<link rel="stylesheet" href="{{ url_for('static',filename='statblock.css') }}">
+</head>
+<body>
+    <div class="cols1A">
+        <div class="content">
+            <div class="bloc">
+                <div class="orange">
+
+                </div>
+                <div class="jaune ">
+                    <h1>{{ monster_name }}</h1>
+
+                    <div class="sansSerif">
+                        <div class="type">{{ monster_type }}, {{ alignment }}</div>
+
+                        <hr>
+                        <div class="red">
+                            <strong>Armor Class</strong> {{ armor }}
+                            <br />
+                            <strong>Hit Points</strong> {{ hp }}
+                            <br />
+                            <strong>Speed</strong> {{ speed }}
+
+                        <hr>
+                            <div class="carac">
+                                <strong>STR</strong><br />{{ strength }}</div>
+                            <div class="carac">
+                                <strong>DEX</strong><br />{{ dexterity }}</div>
+                            <div class="carac">
+                                <strong>CON</strong><br />{{ constitution }}</div>
+                            <div class="carac">
+                                <strong>INT</strong><br />{{ intelligence }}</div>
+                            <div class="carac">
+                                <strong>WIS</strong><br />{{ wisdom }}</div>
+                            <div class="carac">
+                                <strong>CHA</strong><br />{{ charisma }}</div>
+                        <hr>
+{#                            <strong>Saving Throws</strong> {{ saving_throws }}<br />#}
+                            <strong>Skills</strong> {{ skills }}<br />
+{#                            <strong>Damage Immunities</strong> {{ immunities }}<br />#}
+                            <strong>Senses</strong> {{ senses }}<br />
+                            <strong>Languages</strong> {{ languages }}<br />
+                            <strong>Challenge</strong> {{ challenge }}
+                        <hr>
+
+                        {% for ability in abilities %}
+                            <p><strong><em>{{ ability[0] }}</em></strong>. {{ ability[1] }}.</p>
+                        {% endfor %}
+{##}
+{#                        <hr>#}
+{##}
+                        <p><strong>ACTIONS</strong></p>
+{##}
+                        {% for action in actions %}
+                            <p><strong><em>{{ action[0] }}</em></strong> {{ action[1] }} </p>
+                        {% endfor %}
+                            <hr>
+                            <p><strong>DEBUG</strong></p>
+                            <p>{{ raw }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
